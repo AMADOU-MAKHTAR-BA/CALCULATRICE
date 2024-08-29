@@ -1,0 +1,88 @@
+  @import url(/couleur.css);
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "sans-serif";
+  font-size: 1000;
+};
+
+.b{
+border: solid var( --main-color-blanche);
+}
+
+#calcul{
+  background-color: var(--main-color);
+  border: double 5px ;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculatrice{
+  background-color: var(--main-color-blanche);
+  width: 95%;
+  max-width: 250px;
+  display: flex;
+}
+.calculatrice > *{
+  padding: 5px;
+  gap: 5px;
+  border: double 5px;
+}
+/*personnalisation des touches 1*/
+  .flex2{
+  flex: 2;
+}
+.flex1{
+  flex: 1;
+}
+.col1{
+  max-width: 70%;
+ /*disposition des touches*/
+  display: grid;
+}
+
+.ecran{
+  grid-column: 1/4;
+}
+.sortir{
+  grid-column: 1/3;
+}
+.ligne ,.ligne2{
+  display: flex;
+}
+.ligne > * , .ligne2 > *{
+  flex: 1;
+}
+
+/*personnalisation des touches 2 */
+
+.col2{
+  max-width: 30%;
+  display: grid;
+}
+#ecran2 ,#ecran{
+  width: 100%;
+}
+input{
+  border: dashed 2px;
+  color:White ;
+  background-color: rgba(32, 33, 46, 1);
+  height: 30px
+}
+button{
+  height: 35px;
+  border: double 3px;
+    border-radius: 5px;
+    box-shadow: 3px -5px 10px  rgba(32, 33, 46, 1);
+}
+
+
+ button:active{
+   translate: -5px -20px;
+   background :rgba(226, 167, 90, 1);
+   height: 45px;
+ };
+
